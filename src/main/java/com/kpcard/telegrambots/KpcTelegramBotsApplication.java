@@ -4,13 +4,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.telegram.telegrambots.TelegramApiException;
-import org.telegram.telegrambots.TelegramBotsApi;
-
-import com.kpcard.telegrambots.handler.CommandsHandler;
-import com.kpcard.telegrambots.handler.MessageHandler;
 
 @SpringBootApplication
+//@EnableAutoConfiguration(exclude = HibernateJpaAutoConfiguration.class)
+//@EnableJpaRepositories
 public class KpcTelegramBotsApplication {
 
 	private static final Logger logger = LoggerFactory

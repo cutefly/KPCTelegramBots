@@ -68,13 +68,11 @@ public class CommandsHandler extends TelegramLongPollingCommandBot {
 		// TODO Auto-generated method stub
 		//return "269437500:AAEwAYpqj5H97RdJXbRfVJutzxNvNxwyGMo";
 //		
-		String token;
+		String token = "";
 		
 		if ( appConfig != null ) {
 			logger.debug("command bot token : {}", appConfig.getCommandBotsToken());
 			token = appConfig.getCommandBotsToken();
-		} else {
-			token = "269437500:AAEwAYpqj5H97RdJXbRfVJutzxNvNxwyGMo";
 		}
 		
 		return token;
@@ -85,13 +83,11 @@ public class CommandsHandler extends TelegramLongPollingCommandBot {
 		// TODO Auto-generated method stub
 		//return "kpc_test_command_bot";
 //		
-		String username;
+		String username = "";
 		
 		if ( appConfig != null ) {
 			logger.debug("command bot username : {}", appConfig.getCommandBotsUsername());
 			username = appConfig.getCommandBotsUsername();
-		} else {
-			username = "kpc_test_command_bot";
 		}
 		
 		return username;

@@ -57,13 +57,11 @@ public class MessageHandler extends TelegramLongPollingBot {
 	public String getBotToken() {
 		// TODO Auto-generated method stub
 		//return "260464236:AAHNWWCkMqkYott-ebTSqAF-VsWtjid8RAw";
-		String token;
+		String token = "";
 		
 		if ( appConfig != null ) {
 			logger.debug("message bot username : {}", appConfig.getMessageBotsToken());
 			token = appConfig.getMessageBotsToken();
-		} else {
-			token = "260464236:AAHNWWCkMqkYott-ebTSqAF-VsWtjid8RAw";
 		}
 		
 		return token;
@@ -73,13 +71,11 @@ public class MessageHandler extends TelegramLongPollingBot {
 	public String getBotUsername() {
 		// TODO Auto-generated method stub
 		//return "kpc_test_message_bot";
-		String username;
+		String username = "";
 		
 		if ( appConfig != null ) {
 			logger.info("message bot username : {}", appConfig.getMessageBotsUsername());
 			username = appConfig.getMessageBotsUsername();
-		} else {
-			username = "kpc_test_message_bot";
 		}
 		
 		return username;
